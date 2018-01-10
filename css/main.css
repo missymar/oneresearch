@@ -57,6 +57,8 @@ p {
     letter-spacing: -0.45px;
 }
 
+
+
 .bg-light {
     background-color: #fff!important;
 }
@@ -198,7 +200,8 @@ li a:hover {
 }
 
 .one-faq-image {
-    padding-top: 100px;
+    top: 80px;
+    left: 48px;
 }
 
 .one-testimonials-title {
@@ -405,11 +408,18 @@ li a:hover {
     margin-top: 35px;
 }
 
-.default-form {
+.default-form,
+.focused-form {
     width: 320px;
     height: 50px;
-    color: #9B9B9B;
+    color: #081b2f;
 }
+
+.form-control.is-invalid {
+    border-color: #80221C;
+    color: #80221C;
+}
+
 
 #regular-button {
     font-family: 'Open Sans', sans-serif;
@@ -436,8 +446,65 @@ li a:hover {
 
 
 @media only screen and (max-width: 769px) {
+
+    h1 {
+        font-family: 'Merriweather', serif;
+        font-weight: 900;
+        font-size: 36px;
+        color: #FFF;
+        letter-spacing: -0.5px;
+    }
+
+    h2 {
+        font-family: 'Merriweather', serif;
+        font-weight: 900;
+        font-size: 32px;
+        color: #04243D;
+        letter-spacing: -0.4px;
+    }
+
+    h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        color: #04243D;
+        letter-spacing: 0.5px;
+    }
+
+    h4 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #FFF;
+        letter-spacing: -0.45px;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+        letter-spacing: -0.45px;
+    }
+
     .one-friends-image-mobile {
         display: none;
+    }
+
+    .one-namefile-image-section {
+        position: absolute;
+        padding-top: 50px;
+    }
+
+    .one-namefile-section {
+        background-color: #FFF;
+        text-align: center;
+        padding-top: 170px;
+    }
+
+    .one-namefile-area {
+        padding: 0px;
+        width: 100%;
     }
 
 }
