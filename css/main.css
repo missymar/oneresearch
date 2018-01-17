@@ -157,11 +157,11 @@ li a:hover {
 }*/
 
 .hero-right {
-    display: inline;
-    float: left;
-    width: 150%;
+    /*    display: inline;
+    float: left;*/
     /*    margin-top: 200px;*/
-    margin-left: -250px;
+    /*    width: 120%;*/
+    margin-left: -120px;
     height: 300px;
 }
 
@@ -220,7 +220,7 @@ li a:hover {
 }
 
 .one-faq-image {
-    top: 80px;
+    top: 58px;
     left: 48px;
 }
 
@@ -544,9 +544,8 @@ li a:hover {
 }
 
 .one-floating-image {
-    /*
-    margin: 20% auto;
-*/
+
+    margin: 200px 50% auto;
     -webkit-animation: pulse 6s infinite ease-in-out;
     -o-animation: pulse 6s infinite ease-in-out;
     -ms-animation: pulse 6s infinite ease-in-out;
@@ -627,6 +626,63 @@ li a:hover {
         letter-spacing: -0.45px;
     }
 
+    .hero-left {
+        display: inline;
+        float: left;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .hero-right {
+        /* display: inline;
+        float: left;*/
+        margin-left: -120px;
+        height: 300px;
+    }
+
+    .one-titles {
+        padding-left: 0px;
+        padding-top: 85px;
+        text-align: center;
+    }
+
+    .one-how-image {
+        padding-top: 20px;
+    }
+
+    .one-row {
+        display: table;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .one-row-1 {
+        display: table-footer-group;
+    }
+    .one-row-2 {
+        display: table-header-group;
+    }
+
+    .one-row-3 {
+        display: table-header-group;
+    }
+
+    .one-row-4 {
+        display: table-header-group;
+    }
+
+    .one-image-chatting {
+        padding-top: 35px;
+    }
+
+    .one-faq-image {
+        padding-top: 20px;
+    }
+
+    .one-image-woman-sitting {
+        position: relative;
+        top: 42px;
+    }
+
     .one-friends-image-mobile {
         display: none;
     }
@@ -659,7 +715,7 @@ li a:hover {
     }
 
     .one-entry-area {
-        padding: 0px 3%;
+        padding: 0px 4%;
         width: 100%;
     }
 
@@ -691,6 +747,45 @@ li a:hover {
         width: 100%;
     }
 
+    .one-floating-image {
+
+        margin: 33px 27% auto;
+        -webkit-animation: pulse 6s infinite ease-in-out;
+        -o-animation: pulse 6s infinite ease-in-out;
+        -ms-animation: pulse 6s infinite ease-in-out;
+        -moz-animation: pulse 6s infinite ease-in-out;
+        animation: pulse 6s infinite ease-in-out;
+    }
+
+    @-webkit-keyframes pulse {
+        0% {
+            -webkit-transform: scale(0.9);
+            opacity: 0.7;
+        }
+        50% {
+            -webkit-transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: scale(0.9);
+            opacity: 0.7;
+        }
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(0.9);
+            opacity: 0.7;
+        }
+        50% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0.9);
+            opacity: 0.7;
+        }
+    }
 }
 
 
