@@ -32,8 +32,9 @@
 
 <body>
     <!-- Nav -->
-    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
-        <a class="navbar-brand" href="http://oneresearch.io" target="_blank"><img src="images/logo-lockup.svg" alt="One Research"></a>
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top navbar-header" data-toggle="collapse" data-target=".navbar-collapse">
+        <a class="navbar-brand logo-lockup" href="http://oneresearch.io" target="_blank"><img src="images/logo-lockup.svg" alt="One Research"></a>
+        <a class="navbar-brand small-logo" href="http://oneresearch.io" target="_blank"><img src="images/small-logo.svg" alt="One Research"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -298,6 +299,24 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- /Bootstrap JS -->
     <!-- NavShrink JS -->
+    <script>
+        $(document).ready(function() {
+            var logo = $(".navbar-header");
+            logo.find(".small-logo").hide();
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    logo.find(".logo-lockup").hide();
+                    logo.find(".small-logo").show();
+
+                } else {
+                    logo.find(".small-logo").hide();
+                    logo.find(".logo-lockup").show();
+
+                }
+            });
+        });
+
+    </script>
     <!-- /NavShrink JS -->
 </body>
 
