@@ -57,7 +57,7 @@ p {
     letter-spacing: -0.45px;
 }
 
-.bg-light {
+.one-navbar {
     background-color: #fff!important;
 }
 
@@ -358,8 +358,6 @@ li a:hover {
     bottom: 0;
     width: 100%;
     height: 60px;
-    line-height: 60px;
-
 }
 
 .one-footer {
@@ -581,6 +579,7 @@ li a:hover {
         transform: scale(0.9);
         opacity: 0.7;
     }
+
 }
 
 
@@ -630,7 +629,7 @@ li a:hover {
         display: inline;
         float: left;
         width: 100%;
-        padding-left: 20px;
+        padding-left: 14px;
     }
 
     .hero-right {
@@ -642,7 +641,7 @@ li a:hover {
 
     .one-titles {
         padding-left: 0px;
-        padding-top: 85px;
+        padding-top: 65px;
         text-align: center;
     }
 
@@ -786,9 +785,69 @@ li a:hover {
             opacity: 0.7;
         }
     }
+
+    .one-donations-image {
+        float: right;
+        padding-right: 50px
+    }
+    .one-donations-area {
+        padding: 0px;
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 767px) {
+
+
+        .mx-4 {
+            margin-left: 1rem!important;
+            margin-right: 1rem!important;
+        }
+
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #12E1B7;
+            text-align: center;
+            font-size: 16px;
+            padding: 1rem 1rem;
+            font-family: 'Merriweather', serif;
+
+        }
+
+        .mr-4 {
+            margin-right: 0!important;
+            padding-bottom: 30px;
+        }
+
+        .navbar .collapse.show {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+
+        #donate-button {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            background-color: #12E1B7;
+            border-color: #12E1B7;
+            border-radius: 100px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            width: 320px;
+            height: 60px;
+            padding: 1rem 1rem;
+            color: #FFF;
+            text-transform: none!important;
+        }
+
+        #donate-button:hover {
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .one-dollar {
+            display: none;
+        }
+    }
 }
-
-
 
 
 
