@@ -212,7 +212,7 @@ li a:hover {
 }
 
 .one-faq-image {
-    top: 142px;
+    top: 119px;
     left: 48px;
 }
 
@@ -385,7 +385,10 @@ li a:hover {
 
 .one-friends-image-section {
     float: right;
-    padding-right: 100px;
+    padding-left: 300px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .close {
@@ -453,8 +456,9 @@ li a:hover {
 }
 
 .one-entry-image-section {
-    position: absolute;
+    position: fixed;
     padding-top: 109px;
+    left: 0;
 }
 
 .one-entry-section {
@@ -534,46 +538,8 @@ li a:hover {
 }
 
 .one-floating-image {
-
-    margin: 200px 50% auto;
-    -webkit-animation: pulse 6s infinite ease-in-out;
-    -o-animation: pulse 6s infinite ease-in-out;
-    -ms-animation: pulse 6s infinite ease-in-out;
-    -moz-animation: pulse 6s infinite ease-in-out;
-    animation: pulse 6s infinite ease-in-out;
+    margin: 200px 49% auto;
 }
-
-@-webkit-keyframes pulse {
-    0% {
-        -webkit-transform: scale(0.9);
-        opacity: 0.7;
-    }
-    50% {
-        -webkit-transform: scale(1);
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: scale(0.9);
-        opacity: 0.7;
-    }
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.9);
-        opacity: 0.7;
-    }
-    50% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(0.9);
-        opacity: 0.7;
-    }
-
-}
-
 
 @media only screen and (max-width: 769px) {
 
@@ -699,8 +665,9 @@ li a:hover {
     }
 
     .one-entry-image-section {
-        position: absolute;
+        position: fixed;
         padding-top: 52px;
+        left: 0;
     }
 
     .one-entry-section {
@@ -743,43 +710,7 @@ li a:hover {
     }
 
     .one-floating-image {
-
-        margin: 33px 27% auto;
-        -webkit-animation: pulse 6s infinite ease-in-out;
-        -o-animation: pulse 6s infinite ease-in-out;
-        -ms-animation: pulse 6s infinite ease-in-out;
-        -moz-animation: pulse 6s infinite ease-in-out;
-        animation: pulse 6s infinite ease-in-out;
-    }
-
-    @-webkit-keyframes pulse {
-        0% {
-            -webkit-transform: scale(0.9);
-            opacity: 0.7;
-        }
-        50% {
-            -webkit-transform: scale(1);
-            opacity: 1;
-        }
-        100% {
-            -webkit-transform: scale(0.9);
-            opacity: 0.7;
-        }
-    }
-
-    @keyframes pulse {
-        0% {
-            transform: scale(0.9);
-            opacity: 0.7;
-        }
-        50% {
-            transform: scale(1);
-            opacity: 1;
-        }
-        100% {
-            transform: scale(0.9);
-            opacity: 0.7;
-        }
+        margin: 33px 13% auto;
     }
 
     .one-donations-image {

@@ -28,13 +28,15 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 
+
 </head>
 
 <body>
     <!-- Nav -->
-    <nav class="navbar navbar-expand-md fixed-top navbar-header one-navbar navbar-light bg-light" data-toggle="collapse" data-target=".navbar-collapse">
-        <a class="navbar-brand logo-lockup" href="http://oneresearch.io" target="_blank"><img src="images/logo-lockup.svg" alt="One Research"></a>
-        <a class="navbar-brand small-logo" href="http://oneresearch.io" target="_blank"><img src="images/small-logo.svg" alt="One Research"></a>
+    <nav class="navbar navbar-expand-md fixed-top navbar-header one-navbar navbar-light bg-light">
+        <a class="navbar-brand logo-lockup" href="http://oneresearch.io" target="_blank">
+            <img src="images/logo-lockup.svg" class="img-fluid" alt="One Research">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -139,11 +141,11 @@
                         <h2 class="text-center">What folks are saying</h2>
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
                             <!-- Carousel indicators -->
-                            <ol class="carousel-indicators">
+                            <!--                            <ol class="carousel-indicators">
                                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                                 <li data-target="#myCarousel" data-slide-to="1"></li>
                                 <li data-target="#myCarousel" data-slide-to="2"></li>
-                            </ol>
+                            </ol>-->
                             <!-- /Carousel indicators -->
                             <!-- Wrapper for carousel items -->
                             <div class="carousel-inner">
@@ -183,7 +185,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item carousel-item">
+                                <!--                                <div class="item carousel-item">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="media">
@@ -218,8 +220,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="item carousel-item">
+                                </div>-->
+                                <!--                                <div class="item carousel-item">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="media">
@@ -254,7 +256,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                             </div>
                             <!-- /Wrapper for carousel items -->
                         </div>
@@ -290,7 +292,7 @@
         <!-- /Footer -->
     </div>
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- /JQuery -->
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -298,26 +300,32 @@
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
     <!-- /Bootstrap JS -->
-    <!-- NavShrink JS -->
+    <!-- Smooth Scroll JS -->
     <script>
         $(document).ready(function() {
-            var logo = $(".navbar-header");
-            logo.find(".small-logo").hide();
-            $(window).scroll(function() {
-                if ($(document).scrollTop() > 50) {
-                    logo.find(".logo-lockup").hide();
-                    logo.find(".small-logo").show();
+            $(".navbar-nav li a[href^='#']").on('click', function(e) {
+                // prevent default anchor click behavior
+                e.preventDefault();
 
-                } else {
-                    logo.find(".small-logo").hide();
-                    logo.find(".logo-lockup").show();
+                // store hash
+                var hash = this.hash;
 
-                }
+                // animate
+                $('html, body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 800, function() {
+
+                    // when done, add hash to url
+                    // (default click behaviour)
+                    window.location.hash = hash;
+                });
+
             });
         });
 
     </script>
-    <!-- /NavShrink JS -->
+    <!-- /Smooth Scroll JS -->
+
 </body>
 
 </html>
