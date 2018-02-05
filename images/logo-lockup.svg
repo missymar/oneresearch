@@ -9,7 +9,7 @@
             <g id="Group-5">
                 <text id="One-Research" font-family="Merriweather-Heavy, Merriweather" font-size="24" font-weight="600" letter-spacing="-0.449999988">
                     <tspan x="0" y="23" fill="#12E1B7">One</tspan>
-                    <tspan x="49.0992188" y="23" letter-spacing="-1.75" fill="#12E1B7"> </tspan>
+<!--                    <tspan x="49.0992188" y="23" letter-spacing="-1.75" fill="#12E1B7"> </tspan>-->
                     <tspan x="53.9117188" y="23" fill="#011627">Research</tspan>
                 </text>
                 <text id="Transcription-Beta" font-family="OpenSans, Open Sans" font-size="12" font-weight="normal" letter-spacing="0.400000006" fill="#9B9B9B">
